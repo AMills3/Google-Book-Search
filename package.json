@@ -1,0 +1,26 @@
+{
+  "name": "google-book-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "mongoose": "^5.7.12",
+    "react-router-dom": "^5.1.2",
+    "react-toastify": "^5.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AMills3/Google-Book-Search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AMills3/Google-Book-Search/issues"
+  },
+  "homepage": "https://github.com/AMills3/Google-Book-Search#readme"
+}
