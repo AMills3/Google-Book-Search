@@ -12,7 +12,7 @@ app.use(express.json());
 let mongoose = require("mongoose");
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
+    app.use(express.static("client/public"));
 };
 
 // Adding routes
