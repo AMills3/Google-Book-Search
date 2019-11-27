@@ -1,3 +1,3 @@
 module.exports = {
-    Book: requestAnimationFrame("./book")
+    Book: require("./book")
 };
