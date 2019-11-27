@@ -4,7 +4,7 @@ let apiRoutes = require("./api");
 
 // Here is the API route
 
-router.use("/api, apiRoutes");
+router.use("/api", apiRoutes);
 
 // Send the react app
 
