@@ -27,7 +27,7 @@ class Saved extends Component {
     handleBookDelete = async id => {
         let originalBooks = this.state.books;
         try {
-            await.API.deleteBook(id).then(res => this.getSavedBooks());
+            await API.deleteBook(id).then(res => this.getSavedBooks());
         } catch (ex) {
             if (ex.response && ex.response.status === 404)
             toast.error("This book is now deleted.");
