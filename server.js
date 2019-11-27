@@ -10,7 +10,6 @@ app.use(express.json());
 
 // Connecting to Mongodb
 let mongoose = require("mongoose");
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
@@ -18,6 +17,14 @@ if (process.env.NODE_ENV === "production") {
 
 // Adding routes
 app.use(routes);
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks",
+{
+    useCreateIndex: true,
+    useNewUrlParser: true
+}
+);
+
 
 // Starting the server
 let PORT = process.env.PORT || 3001
