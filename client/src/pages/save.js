@@ -60,7 +60,7 @@ class Saved extends Component {
                         { this.state.books.length ? (
                             <List>
                                 { this.state.books.map(book => (
-                                    <Book
+                                    <BookList
                                     key={ book._id }
                                     title={ book.title }
                                     link={ book.link }
