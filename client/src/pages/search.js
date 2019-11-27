@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BookList from "../components/BookList/index";
 import API from "../utils/API";
+import Searchpage from "../components/Searchpage/index";
 import { List } from "../components/List/index";
 import { toast } from "react-toastify";
 
@@ -72,7 +73,7 @@ class Search extends Component {
                                 <h2 className="heading-subtitle mx-sm-3 mb-2">
                                     Search for and save books.
                                 </h2>
-                                <SearchPage
+                                <Searchpage
                                 handleInputChange={ this.handleInputChange }
                                 handlePageSubmit={ this.handlePageSubmit }
                                 q={ this.state.q }
@@ -89,7 +90,7 @@ class Search extends Component {
                         { this.state.books.length ? (
                             <List>
                                 { this.state.books.map(book => (
-                                    <Book
+                                    <BookList
                                     key={ book.id }
                                     title={ book.volumeInfo.title }
                                     link={ book.volumeInfo.infoLink}
